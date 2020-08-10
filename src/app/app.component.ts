@@ -10,6 +10,7 @@ export class AppComponent implements OnInit{
   title = 'angular-course';
 
   aw=true;
+persona = ["vivian", "marco", "maria", "lupe" ]
   ngOnInit(){
 
   }
