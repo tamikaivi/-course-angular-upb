@@ -4,3 +4,13 @@
 <app-test1 *ngIf="aw" name="vivian"></app-test1>
 <button (click)="aw=false;"> Change aw
 </button>
+<div *ngFor="let item of person, let i = index">
+
+</div>
+
+<div [ngSwitch]="aux">
+  <p *ngSwitchCase="3">el valor es 3</p>
+  <p *ngSwitchCase="2">el valor es 2</p>
+  <p *ngSwitchDefault>no es ni 2 ni 3</p>
+
+</div>
