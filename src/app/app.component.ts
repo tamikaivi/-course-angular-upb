@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import {from, fromEvent } from 'rxjs';
 
 @Component({
@@ -9,12 +9,31 @@ import {from, fromEvent } from 'rxjs';
 export class AppComponent implements OnInit{
   title = 'angular-course';
 
-  aw=true;
-  aux=3;
-  auxcolor='red';
-  auxclass=true;
-person = ["vivian", "marco", "maria", "lupe" ]
-  ngOnInit(){
+ personas=[
+  { name:'vivian',
+    lastName: 'loza',
+    age:21,
+    enable: false
+  },
+  { name:'la caballota',
+    lastName: 'loza',
+    age:21,
+    enable: true
+  },
+  { name:'lupe',
+    lastName: 'loza',
+    age:21,
+    enable: false
+  },
+  { name:'maria',
+    lastName: 'loza',
+    age:21,
+    enable: true
+  }
+ ]
+
+
+ ngOnInit(){
 
   }
 }
