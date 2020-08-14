@@ -2,5 +2,11 @@
   Vivian
 </p>
 <p>
-  {{ 2 | expo:2 }}
+  Pure: {{ numbers | pure }}
 </p>
+
+<p>
+  ImPure: {{ numbers | impure }}
+</p>
+
+<button (click)="numbers.push(4)">ADD</button>

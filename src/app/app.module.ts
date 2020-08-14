@@ -5,12 +5,15 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { PersonaComponent } from './components/persona/persona.component';
 import {ExpoPipe} from './pipes/expo.pipe'
+import { PurePipe } from './pipes/pure.pipe';
+import { ImpurePipe } from './pipes/impure.pipe';
 @NgModule({
-   declarations: [
+   declarations: [		
       AppComponent,
       PersonaComponent,
-      ExpoPipe
-
+      ExpoPipe,
+      PurePipe,
+      ImpurePipe
    ],
    imports: [
       BrowserModule,
