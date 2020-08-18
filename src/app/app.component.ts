@@ -8,6 +8,9 @@ import {from, fromEvent } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   title = 'angular-course';
+  aw=true;
+  name="vivian";
+  lastname="loza";
 
  personas=[
   { name:'vivian',

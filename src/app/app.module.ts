@@ -8,6 +8,7 @@ import {ExpoPipe} from './pipes/expo.pipe'
 import { PurePipe } from './pipes/pure.pipe';
 import { ImpurePipe } from './pipes/impure.pipe';
 import {NgColorDirective} from './directivas/ngColor.directive'
+import {TestComponent} from './components/test/test.component'
 @NgModule({
    declarations: [		
       AppComponent,
@@ -15,7 +16,8 @@ import {NgColorDirective} from './directivas/ngColor.directive'
       ExpoPipe,
       PurePipe,
       ImpurePipe,
-      NgColorDirective
+      NgColorDirective,
+      TestComponent
    ],
    imports: [
       BrowserModule,
