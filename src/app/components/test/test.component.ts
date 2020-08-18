@@ -32,6 +32,7 @@ export class TestComponent implements OnInit, OnChanges {
       console.log("On Changes",changes.lastname.currentValue);
       const aux='AAA'+changes.lastname.currentValue;
       this.lastname = aux;
+      
     }
   }
 
