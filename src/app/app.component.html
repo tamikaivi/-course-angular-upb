@@ -1,25 +1,2 @@
-<p>
-  Vivian
-</p>
-<p>
-  Pure: {{ numbers | pure }}
-</p>
-
-<p>
-  ImPure: {{ numbers | impure }}
-</p>
-
-<button (click)="numbers.push(4)">ADD</button>
-
-<div  [appNgColor]="'green'" [secondColor]="'red'">
-   Nombre
-</div>
-<button (click)="name = 'kevin'; lastname='pomier'">Change name and lastname</button>
-
-
-<app-test [name]="name" [lastname]="lastname"></app-test>
-
-
-<div style="border: 3px solid green;" (appNgFocus)="name='CABIENOMBRE'">
-     {{name}}
-</div>
+<p>Hola</p>
+<router-outlet></router-outlet>
