@@ -11,7 +11,9 @@ const routes: Routes = [
       { path: 'home1', component: Home1Component},
       { path: 'home2', component:Home2Component}] },
   { path: 'admin',component: AdminComponent },
-  { path: 'about',component: AboutComponent }
+  { path: 'about',component: AboutComponent },
+  { path: 'user',loadChildren: ()=> import('./modules/user/user.module').then(n => n.UserModule) }
+
 ];
 
 export const AppRoutingRoutes = RouterModule.forRoot(routes);
