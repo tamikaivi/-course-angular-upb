@@ -7,7 +7,11 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {AppRoutingRoutes } from './app-routing.routing'
 import {Home1Component} from './components/home1/home1.component'
-import {Home2Component} from './components/home2/home2.component'
+import {Home2Component} from './components/home2/home2.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
    declarations: [		
       AppComponent,
@@ -20,7 +24,11 @@ import {Home2Component} from './components/home2/home2.component'
    imports: [
       BrowserModule,
       FormsModule,
-      AppRoutingRoutes
+      BrowserAnimationsModule,
+      AppRoutingRoutes,
+      MatSliderModule,
+      NgbModule,
+      MatIconModule
    ],
    providers: [],
    bootstrap: [
